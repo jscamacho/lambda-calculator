@@ -1,10 +1,13 @@
 import React from "react";
 
 //import any components needed
+import NumberButtons from "./NumberButton";
 
 //Import your array data to from the provided data file
+import { numbers } from "../../../data";
 
 const Numbers = () => {
+  const [numberState, setNumberState] = useState(numbers);
   // STEP 2 - add the imported data to state
   return (
     <div>
@@ -14,3 +17,4 @@ const Numbers = () => {
     </div>
   );
 };
+
